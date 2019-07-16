@@ -1,18 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react'
+import './index.less'
 
 interface SwitchProps {
   open: boolean
+  toggle: Function
+  disabled: boolean
 }
 
 export default function(props: SwitchProps) {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
-      <p>
-        You clicked {count} {props.open}times
-      </p>
-      <button onClick={() => setCount(count + 1)}>Click me</button>
-    </div>
+    <span
+      onClick={() => props.disabled !== true && props.toggle()}
+      className={`switch-container ${props.open ? 'switch-open' : ''} ${
+        props.disabled ? 'switch-disabled' : ''
+      }`}>
+      <span className={'switch-bg'} />
+      <span />
+    </span>
   )
 }
