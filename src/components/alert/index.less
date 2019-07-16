@@ -1,0 +1,29 @@
+.var-alert(@background-color, @border-corlor, @text-color) {
+  border: 1px solid @border-corlor;
+  background-color: @background-color;
+  color: @text-color;
+}
+
+@alert-prefix-cls: ~'@{rxj-prefix}-alert';
+
+.@{alert-prefix-cls} {
+  position: relative;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+
+  &-info {
+    .var-alert(@alert-info-bg-color, @alert-info-bg-color, @white);
+  }
+
+  &-success {
+    .var-alert(@alert-success-bg-color, @alert-success-bg-color, @white);
+  }
+
+  &-warning {
+    .var-alert(@alert-warning-bg-color, @alert-warning-bg-color, @white);
+  }
+
+  &-danger {
+    .var-alert(@alert-danger-bg-color, @alert-danger-bg-color, @white);
+  }
+}

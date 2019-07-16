@@ -1,0 +1,88 @@
+{
+  "name": "rxj",
+  "version": "0.0.1",
+  "description": "react mobile ui",
+  "main": "index.js",
+  "scripts": {
+    "start:demo": "cross-env NODE_ENV=development node scripts/dev-server.js --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xwwLmm/rxj.git"
+  },
+  "keywords": [
+    "react",
+    "mobile-ui"
+  ],
+  "author": "xww",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xwwLmm/rxj/issues"
+  },
+  "homepage": "https://github.com/xwwLmm/rxj#readme",
+  "jest": {
+    "testRegex": "/__tests__/.*\\.(ts|js)$"
+  },
+  "prettier": "@frontend-cli/prettier-config",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "antd": "^3.18.1",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@frontend-cli/prettier-config": "^1.0.3",
+    "@types/classnames": "^2.2.7",
+    "@types/react": "^16.8.14",
+    "@types/react-dom": "^16.8.4",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-import": "^1.8.0",
+    "connect-history-api-fallback": "^1.3.0",
+    "cross-env": "^5.1.4",
+    "css-loader": "^1.0.0",
+    "docz": "^1.0.4",
+    "docz-plugin-css": "^0.11.0",
+    "docz-theme-default": "^1.0.4",
+    "eslint": "^5.1.0",
+    "eslint-plugin-jest": "^22.5.1",
+    "eslint-plugin-react": "^7.10.0",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.3.1",
+    "inquirer": "^6.0.0",
+    "jest": "^24.7.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.4",
+    "mini-css-extract-plugin": "^0.4.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.17.0",
+    "pretty-quick": "^1.10.0",
+    "progress-bar-webpack-plugin": "^1.11.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "rimraf": "^2.6.3",
+    "sass-resources-loader": "^2.0.0",
+    "style-loader": "^0.21.0",
+    "ts-loader": "^5.4.3",
+    "typescript": "^3.4.5",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.16.1",
+    "webpack-dev-middleware": "^3.1.3",
+    "webpack-hot-middleware": "^2.18.0"
+  }
+}
